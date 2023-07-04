@@ -1,0 +1,119 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.team {
+    margin: 70px 0;
+    position: relative;
+    bottom: 100px;
+
+    .container {
+        margin-top: 150px;
+        &__title {
+            text-align: center;
+            color: $light-blue;
+            font-weight: 700;
+        }
+
+        &__text {
+            text-align: center;
+            margin-bottom: 40px;
+            color: $black;
+            font-weight: 700;
+        }
+
+        &__item {
+            width: 90%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            &__img {
+                width: 100%;
+            }
+
+            &__list {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $black;
+                color: $light-blue;
+                border-radius: 1.4rem;
+                padding: .5rem 1rem;
+                position: relative;
+                top: -2rem;
+                box-shadow: 0px 8px 13px 0px #ddd;
+                transition: $transition;
+                z-index: 2;
+
+                &__item {
+                    color: $light-blue;
+                }
+            }
+
+            &__main {
+                width: 80%;
+                height: 120px;
+                background-color: $white;
+                position: relative;
+                transition: $transition;
+                box-shadow: 0px 8px 13px 0px #ddd;
+                top: -55px;
+                &__name {
+                    padding-top: 1.3rem;
+                    margin-bottom: 8px;
+                    transition: $transition;
+
+                    p {
+                        margin-top: 1rem;
+                        transition: $transition;
+                        color: $black;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                }
+                &__position{
+                    color: $light-blue;
+                    transition: $transition;
+                }
+            }
+            &:hover {
+                .container__item {
+                    &__list {
+                        background-color: #fff;
+                        &__item {
+                            &:hover{
+                                transition: $transition;
+                                color: #000;
+                            }
+                        }
+                    }
+        
+                    &__main {
+                        width: 100%;
+                        background-color: $light-blue;
+                        &__name {
+        
+                            p {
+                                color: #fff;
+                                &:hover{
+                                    transition: $transition;
+                                    color: #000;
+                                }
+                            }
+        
+                        }
+                        &__position{
+                            color: $black;
+                        }
+                    }
+        
+                }
+                
+            }
+        }
+        
+    }
+}
