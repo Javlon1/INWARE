@@ -18,6 +18,7 @@
             &__logo {
                 width: 107px;
                 height: 50px;
+                
             }
 
             &__list {
@@ -48,13 +49,13 @@
                         transition: $transition;
                         opacity: 0;
                         animation: a-one 5s linear infinite;
-                        background-color: $black;
+                        background-color: $light-blue;
                     }
 
                     &:hover,
                     &:focus,
                     &.active {
-                        color: $black;
+                        color: $light-blue;
 
                         &:before {
                             opacity: 1;
@@ -78,7 +79,7 @@
                     display: inline-block;
                     font-size: .7rem;
                     color: $white;
-                    border: 1px solid $black;
+                    border: 1px solid $light-blue;
                     padding: 12px 15px;
                     position: relative;
                     z-index: 1;
@@ -93,7 +94,7 @@
                         opacity: 0;
                         z-index: -1;
                         transition: $transition;
-                        background-color: $black;
+                        background-color: $light-blue;
                     }
 
                     &:after {
@@ -106,7 +107,7 @@
                         opacity: 0;
                         z-index: -1;
                         transition: $transition;
-                        background-color: $black;
+                        background-color: $light-blue;
                     }
 
                     &:hover {

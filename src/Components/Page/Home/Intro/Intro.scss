@@ -24,10 +24,11 @@
 
             &__text {
                 margin-bottom: 40px;
-                color: #e0e0e0;
+                color: #eceaea;
 
                 font: {
                     size: 16px;
+                    weight: 600;
                 }
 
             }
@@ -54,6 +55,7 @@
                 &:hover {
                     transition: $transition;
                     background-color: $light-blue;
+                    box-shadow: 0px 0px 20px 5px #ddd;
 
                     i {
                         left: 0;

@@ -4,7 +4,7 @@ import './Header.scss'
 import { HeaderData } from '../../../Data/Data'
 import Language from './Language/Language';
 import { Context } from '../../../Context/Context';
-import Img from '../../../Assets/Img/img.webp'
+import Img from '../../../Assets/Img/logo.jpg'
 
 export default function Header() {
 
@@ -52,7 +52,11 @@ export default function Header() {
             <Language />
           </ul>
           <button className={nav ? 'container__nav__btn active-nav' : 'container__nav__btn'}>
-            <Link to='/' className='container__nav__btn__a'>
+            <Link to='/contact' className='container__nav__btn__a'
+              onClick={() => {
+                setMenu(5)
+                sessionStorage.setItem('menu', 5)
+              }}>
               CONTACT
             </Link>
           </button>
