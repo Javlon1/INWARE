@@ -420,6 +420,63 @@ export const Blogs = [
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
         icon: 'bi-chevron-right',
     },
+    {
+        id: 4,
+        subject: 'Rights Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 5,
+        subject: 'Business Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 6,
+        subject: 'Criminal Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    },
+    {
+        id: 7,
+        subject: 'Rights Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right', 
+    }, {
+        id: 8,
+        subject: 'Business Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 9,
+        subject: 'Criminal Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    },
+    {
+        id: 10,
+        subject: 'Rights Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 11,
+        subject: 'Business Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    }, {
+        id: 12,
+        subject: 'Criminal Case',
+        title: 'Lorem ipsum dolor sit amet.',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores blanditiis vitae dolor iusto obcaecati. Sunt est provident, assumenda culpa ea.',
+        icon: 'bi-chevron-right',
+    },
 ]
 
 

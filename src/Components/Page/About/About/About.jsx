@@ -28,9 +28,6 @@ export default function About() {
                                 ))
                             }
                         </ul>
-                        <Link href='/' className='btn'>
-                            Learn More
-                        </Link>
                     </div>
                 </div>
             </div>

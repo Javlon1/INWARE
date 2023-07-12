@@ -45,7 +45,6 @@ export default function Blog() {
                         disableOnInteraction: false,
                     }}
                     pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >

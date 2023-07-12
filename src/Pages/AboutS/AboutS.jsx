@@ -11,6 +11,6 @@ export default function AboutS() {
             <AllIntro text={'About Our Firm and History'} title={'About'} />
             <About />
             <Expertise />
-        </section>
+        </section> 
     )
 }
