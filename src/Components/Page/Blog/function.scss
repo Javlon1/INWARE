@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &__a {
         border-radius: 1rem;
         box-shadow: 0px 0px 12px 0px #ddddddad;
@@ -98,6 +99,15 @@
             i {
                 margin-top: 3.5px;
             }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .blogf {
+        &__a {
+            width: 90%;
         }
     }
 }

@@ -1,6 +1,7 @@
 @import '../../../Assets/Sass/Veriables.scss';
 
 .allIntro {
+    padding: 140px 0 120px;
     background-color: $basic;
 
     .container {
@@ -8,7 +9,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 45vh;
 
         h1 {
             color: $white;
