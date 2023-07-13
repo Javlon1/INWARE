@@ -51,19 +51,14 @@ function App() {
   //   }
   // };
   //
+  
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const getCounteries = () => {
       setLoading(true)
       fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
-        .then(resp => {
-          if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
-          return resp.json()
-        })
-        .then(data => console.log(data))
-        .then(setLoading(false))
-        .catch(error => console.error(error.message))
+      setLoading(false)
     }
     getCounteries()
   }, [])
