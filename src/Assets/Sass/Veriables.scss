@@ -6,5 +6,18 @@ $about-bc: #FEFAF3;
 $gray: #4C4B4B;
 $transition: .5s all ease;
 
-
+//
 // @media only screen and (max-width: px) {} 
+//
+
+//
+// React.useEffect(() => {
+//     fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+//         .then(resp => {
+//             if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+//             return resp.json()
+//         })
+//         .then(data => setItems(data))
+//         .catch(error => console.error(error.message))
+// }, [])
+//
