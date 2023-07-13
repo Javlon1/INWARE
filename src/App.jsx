@@ -9,6 +9,7 @@ import Home from './Pages/Home/Home';
 import AboutS from './Pages/AboutS/AboutS';
 import Blog from './Pages/Blog/Blog';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import OurTeam from './Pages/OurTeam/OurTeam';
 
 function App() {
 
@@ -60,8 +61,10 @@ function App() {
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutS />} />
+        <Route path='/team' element={<OurTeam />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<ContactUs />} />
+
 
       </Routes>
 
