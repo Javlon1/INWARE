@@ -8,6 +8,7 @@ import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
 import AboutS from './Pages/AboutS/AboutS';
 import Blog from './Pages/Blog/Blog';
+import ContactUs from './Pages/ContactUs/ContactUs';
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutS />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/contact' element={<ContactUs />} />
 
       </Routes>
 

@@ -513,3 +513,46 @@ export const dataExpertise = [
         icon: ''
     },
 ]
+
+export const dataLocation = [ 
+    {
+        id: 1,
+        icon: 'bi-geo-alt-fill',
+        title: 'Location',
+        text: [
+            {
+                id:1,
+                text:'vudygsfvi udsfygvud vdusfygv dfsyuvgids',
+                link: 'dwqdw'
+            }
+        ],
+    },{
+        id: 2,
+        icon: 'bi-telephone-fill',
+        title: 'Phone',
+        text: [
+            {
+                id:1,
+                text:'+998905251243',
+                link: '+998905251243'
+            },
+            {
+                id:2,
+                text:'+998982702700',
+                link: '+998982702700'
+            }
+        ] ,
+    },{
+        id: 3,
+        icon: 'bi-envelope',
+        title: 'Email',
+        text: [
+            {
+                id:1,
+                text:'muhamedmijotot@gmail.com',
+                link: 'muhamedmijotot@gmail.com'
+            },
+        ],
+    }
+
+]
