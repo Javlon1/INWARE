@@ -44,8 +44,6 @@ export default function Team() {
                         disableOnInteraction: false,
                     }}
                     pagination={{ clickable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     {
                         Teams?.map((e) => (

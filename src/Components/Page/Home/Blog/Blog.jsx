@@ -45,8 +45,6 @@ export default function Blog() {
                         disableOnInteraction: false,
                     }}
                     pagination={{ clickable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
                 >
                     {
                         Blogs?.map((e) => (
