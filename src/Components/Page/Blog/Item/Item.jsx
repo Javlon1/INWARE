@@ -1,7 +1,6 @@
 import * as React from 'react'
 import ReactPaginate from 'react-paginate'
 import './Item.scss'
-import axios from 'axios'
 import Blog from '../function'
 
 export default function Item() {
@@ -13,8 +12,13 @@ export default function Item() {
     React.useEffect(() => {
         const getCounteries = async () => {
             setLoading(true)
-            const res = await axios.get('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
-            setBlogs(res.data);
+            fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+                .then(resp => {
+                    if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+                    return resp.json()
+                })
+                .then(data => setBlogs(data))
+                .catch(error => console.error(error.message))
             setLoading(false)
 
         }
@@ -38,7 +42,7 @@ export default function Item() {
         <section className='item'>
             <div className='container'>
 
-                <Blog blogs={currentCountry} loading={loading}/>
+                <Blog blogs={currentCountry} loading={loading} />
 
                 <ReactPaginate
                     previousLabel={'<<'}

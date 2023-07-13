@@ -1,7 +1,6 @@
 import * as React from 'react'
 import ReactPaginate from 'react-paginate'
 import './Body.scss'
-import axios from 'axios'
 import TeamF from '../function'
 
 
@@ -14,8 +13,13 @@ export default function Body() {
     React.useEffect(() => {
         const getCounteries = async () => {
             setLoading(true)
-            const res = await axios.get('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
-            setTeam(res.data);
+            fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+                .then(resp => {
+                    if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+                    return resp.json()
+                })
+                .then(data => setTeam(data))
+                .catch(error => console.error(error.message))
             setLoading(false)
 
         }
