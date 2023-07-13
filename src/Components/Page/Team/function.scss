@@ -23,7 +23,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: $black;
+            background-color: $light-blue;
             color: $light-blue;
             border-radius: 1.4rem;
             padding: .5rem 1rem;
@@ -113,25 +113,6 @@
     .teamf {
         &__item {
             width: 100%;
-            &__list {
-                width: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: $black;
-                color: $light-blue;
-                border-radius: 1.4rem;
-                padding: .5rem 1rem;
-                position: relative;
-                top: -2rem;
-                box-shadow: 0px 8px 13px 0px #ddd;
-                transition: $transition;
-                z-index: 2;
-    
-                &__item {
-                    color: $light-blue;
-                }
-            }
     
             &__main {
                 width: 80%;

@@ -38,7 +38,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background-color: $black;
+                background-color: $light-blue;
                 color: $light-blue;
                 border-radius: 1.4rem;
                 padding: .5rem 1rem;
@@ -49,7 +49,7 @@
                 z-index: 2;
 
                 &__item {
-                    color: $light-blue;
+                    color: $white;
                 }
             }
 
@@ -85,6 +85,7 @@
                     &__list {
                         background-color: #fff;
                         &__item {
+                            color: $light-blue;
                             &:hover{
                                 transition: $transition;
                                 color: #000;

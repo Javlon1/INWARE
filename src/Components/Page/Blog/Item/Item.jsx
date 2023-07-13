@@ -10,7 +10,7 @@ export default function Item() {
     const [countriesPerPage] = React.useState(6)
 
     React.useEffect(() => {
-        const getCounteries = async () => {
+        const getCounteries = () => {
             setLoading(true)
             fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
                 .then(resp => {
@@ -19,9 +19,8 @@ export default function Item() {
                 })
                 .then(data => setBlogs(data))
                 .catch(error => console.error(error.message))
-            setLoading(false)
-
-        }
+                .then(setLoading(false))
+            }
         getCounteries()
     }, [])
 
