@@ -10,6 +10,7 @@ import Blog from './Pages/Blog/Blog';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import OurTeam from './Pages/OurTeam/OurTeam';
 import Loader from './Components/Ui/Loader/Loader';
+import TeamDetails from './Pages/OurTeam/TeamDetails/TeamDetails';
 
 function App() {
 
@@ -76,6 +77,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutS />} />
         <Route path='/team' element={<OurTeam />} />
+        <Route path='/team-detail' element={<TeamDetails />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<ContactUs />} />
 

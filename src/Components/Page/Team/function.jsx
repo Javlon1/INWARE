@@ -14,7 +14,7 @@ export default function TeamF({ team, loading }) {
         <section className='teamf'>
             {
                 team?.map((e) => (
-                    <Link key={e.id} to='/team'>
+                    <Link key={e.id} to='/team-detail'>
                         <div className='teamf__item'>
                             <img className='teamf__item__img' src={Img} alt="" />
                             <ul className='teamf__item__list'>
