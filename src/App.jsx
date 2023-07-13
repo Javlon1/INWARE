@@ -52,12 +52,11 @@ function App() {
   // };
   //
   
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const getCounteries = () => {
-      setLoading(true)
-      fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+    const getCounteries = async () => {
+    await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
       setLoading(false)
     }
     getCounteries()

@@ -5,21 +5,20 @@ import Blog from '../function'
 
 export default function Item() {
     const [blogs, setBlogs] = React.useState([])
-    const [loading, setLoading] = React.useState(false)
+    const [loading, setLoading] = React.useState(true)
     const [currentPage, setCurrentPage] = React.useState(1)
     const [countriesPerPage] = React.useState(6)
 
     React.useEffect(() => {
-        const getCounteries = () => {
-            setLoading(true)
-            fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+        const getCounteries = async () => {
+            await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
                 .then(resp => {
                     if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
                     return resp.json()
                 })
                 .then(data => setBlogs(data))
                 .catch(error => console.error(error.message))
-                .then(setLoading(false))
+                setLoading(false)
             }
         getCounteries()
     }, [])

@@ -6,14 +6,13 @@ import TeamF from '../function'
 
 export default function Body() {
     const [team, setTeam] = React.useState([])
-    const [loading, setLoading] = React.useState(false)
+    const [loading, setLoading] = React.useState(true)
     const [currentPage, setCurrentPage] = React.useState(1)
     const [countriesPerPage] = React.useState(8)
 
     React.useEffect(() => {
         const getCounteries = async () => {
-            setLoading(true)
-            fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+            await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
                 .then(resp => {
                     if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
                     return resp.json()
