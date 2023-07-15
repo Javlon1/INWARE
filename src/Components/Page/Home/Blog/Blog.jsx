@@ -49,7 +49,7 @@ export default function Blog() {
                     {
                         Blogs?.map((e) => (
                             <SwiperSlide key={e.id}>
-                                <Link to='/blog-detail' className='container__a'>
+                                <div to='/blog-detail' className='container__a'>
                                     <img className='container__a__img' src={Img} alt="" />
                                     <div className='container__a__item'>
                                         <h3 className='container__a__item__sbject'>{e.subject}</h3>
@@ -58,11 +58,7 @@ export default function Blog() {
                                         </span>
                                         <p className='container__a__item__text'>{e.text}</p>
                                     </div>
-                                    <span className='container__a__link'>
-                                        <p>Read More</p>
-                                        <i className={`bi ${e.icon}`}></i>
-                                    </span>
-                                </Link>
+                                </div>
                             </SwiperSlide>
                         ))
                     }

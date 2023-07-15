@@ -14,7 +14,7 @@ export default function Blog({ blogs, loading }) {
         <section className='blogf'>
             {
                 blogs?.map((e)=>(
-                    <Link key={e.id} to='/blog-detail' className='blogf__a'>
+                    <div key={e.id} className='blogf__a'>
                         <img className='blogf__a__img' src={Img} alt="" />
                         <div className='blogf__a__item'>
                             <h3 className='blogf__a__item__sbject'>{e.name}</h3>
@@ -23,11 +23,7 @@ export default function Blog({ blogs, loading }) {
                             </span>
                             <p className='blogf__a__item__text'>{e.address}</p>
                         </div>
-                        <span className='blogf__a__link'>
-                            <p>Read More</p>
-                            <i className={`bi ${e.icon}`}></i>
-                        </span>
-                    </Link>
+                    </div>
                 ))
             }
         </section>
